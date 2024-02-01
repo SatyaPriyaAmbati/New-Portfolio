@@ -1,0 +1,370 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color:white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 30px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 15px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation:slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: skyblue;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img{
+    width: 20%;
+    height: -200px;
+    padding: 10px 10%;
+    margin: 5px 5px;
+    border-radius: 8px;
+}
+.home-content h3 span
+{
+    color: skyblue;
+    font-size: 13px;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+
+}
+.home-content h3{
+    font-size: 26px; 
+    opacity: 0;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h2{
+    font-size: 25px;
+}
+.home-content p{
+    font-size: 13px;
+    margin: 6px -3px;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    
+}
+.home-content h3 span:hover{
+    color: gray;
+}
+.Social-media{
+    font-size: 20px;
+    color: skyblue;
+}
+.Social-media a {
+    color: azure;
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.btn{
+    color: azure;
+    font-size: 14px;
+}
+.Social-media a :hover{
+    color: skyblue;
+}
+.btn{
+    display: inline-block;
+    background: skyblue;
+    border-radius: 5px;
+    margin-top: 16px;
+    text-decoration: none;
+    color: black;
+    height: 20px;
+    width: 85px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.btn:hover{
+    color: azure;
+}
+.about{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    margin: 165px 165px;
+    border-radius: 10px;
+}
+.about-text h2{
+    color: aqua;
+    font-size: 30px;
+    flex-basis: 60%;
+    margin: -10px -155px;
+    margin-top: -150px;
+    flex-wrap: wrap;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.about-text h4{
+    font-size: 15px;
+    gap: 1.5rem;
+    margin: -10px -155px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.about-text h2:hover{
+    color: aqua;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    padding: 10px 10%;
+    margin: 60px 60px;
+    margin-top: auto;
+}
+.education-text{
+    margin: 80px 80px;
+}
+.education-text h2 span{
+    color: aqua;
+}
+.education-text p{
+    color: azure;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.education-text h4 span{
+    color: aqua;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.education-content h1{
+    color: aqua;
+    font-size: 20px;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+}
+.second-education h1 span{
+    color: aqua;
+}
+.second-education p span{
+    color: aqua;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.second-education-content h1{
+    font-size: 20px;
+    color: aqua;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+
+}
+.skills-img img
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    padding: 30px 30%;
+    margin: 60px 60px;
+    margin-top: auto;
+    border-radius: 10%;
+      
+}
+.ProgrammingSkills h1{
+    color: aqua;
+    display: inline-block; 
+    font-size: 20px;
+    animation: slideRight 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    padding: 25px 25%;
+   
+}
+.ProgrammingSkills h2{
+    
+    color: aqua;
+    display: inline-block; 
+    font-size: 20px;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25%;
+    
+}
+.ProgrammingSkills h3{
+    color: aqua;
+    display: inline-block; 
+    font-size: 20px;
+    animation: slideRight 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25%;
+   
+    
+}
+.ProgrammingSkills h4{
+    color: aqua;
+    display: inline-block; 
+    font-size: 20px;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25%;
+ 
+}
+.contact-me{
+    padding-bottom: 20%;
+    margin: 165px 165px;
+    border-radius: 10px;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+   
+    
+
+}
+.contact-me h1{
+    color: aqua;
+    font-size: 18px;
+    display: inline-block;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .7s;
+   
+  
+}
+.contact-me h2{
+    color: aqua;
+    font-size: 18px;
+    display: inline-block;
+    animation: slideRight 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.contact-me h3{
+    color: aqua;
+    font-size: 18px;
+    display: inline-block;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
